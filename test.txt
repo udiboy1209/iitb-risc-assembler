@@ -1,0 +1,11 @@
+lhi r0,0x2
+lhi r1,0x1
+adi r1,r1,0x32
+adi r1,r1,0x32 ; this is a comment
+
+; Store something
+sw r1,r0,0x0
+
+rst
+
+; Should store 0x00e4 at 0x100 location
